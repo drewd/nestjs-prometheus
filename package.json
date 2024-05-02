@@ -1,0 +1,28 @@
+{
+  "name": "@drewd/nestjs-prometheus",
+  "version": "0.0.0",
+  "description": "A simple helper to define and inject metrics into a NestJS application.",
+  "author": "Drew Dobson <drew.dobson05@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/drewd/nestjs-prometheus",
+  "bugs": {
+    "url": "https://github.com/drewd/nestjs-prometheus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drewd/nestjs-prometheus.git"
+  },
+  "main": "index",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc --project tsconfig.build.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@nestjs/common": "^9.0.0 || ^10.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.5"
+  }
+}
