@@ -16,12 +16,16 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "tsc --project tsconfig.build.json",
+    "format": "prettier .",
+    "format:check": "npm run format -- --check",
+    "format:fix": "npm run format -- --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0 || ^10.0.0"
   },
   "devDependencies": {
+    "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
     "typescript": "^5.4.5"
   }
